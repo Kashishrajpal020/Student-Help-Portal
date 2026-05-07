@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Warden Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="..\css\warden1.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <div>
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            <div style="font-size:42px;">
+                🛡️
+            </div>
+
+            <h1>Warden</h1>
+
+            <p>Hostel Fine Management</p>
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="warden1.html" class="active">
+                📝 Issue Fine
+            </a>
+
+            <a href="pending-requests.html">
+                ⏳ Pending Requests
+            </a>
+
+            <a href="approved-warden.html">
+                ✅Approved Fines
+            </a>
+
+            <a href="student-records.html">
+                👨‍🎓 Student Records
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="sidebar-footer">
+
+        Hostel Management System
+
+    </div>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+
+        <div class="heading-box">
+
+    <div class="heading-badge">
+        ADMIN PANEL
+    </div>
+
+    <h2>
+        Issue Fine
+    </h2>
+
+    <p>
+        Create and forward disciplinary fine requests to the Chief Warden
+    </p>
+
+</div>
+
+        <div class="profile">
+            👤
+        </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="card">
+
+        <div class="section-title">
+            Fine Details
+        </div>
+
+        <!-- STUDENT -->
+        <div class="input-group">
+
+            <label>Select Student</label>
+
+            <select id="studentName">
+
+                <option value="Rahul">Rahul</option>
+                <option value="Aman">Aman</option>
+                <option value="Priya">Priya</option>
+                <option value="Simran">Simran</option>
+                <option value="Karan">Karan</option>
+
+            </select>
+
+        </div>
+
+        <!-- TITLE -->
+        <div class="input-group">
+
+            <label>Fine Title</label>
+
+            <input
+            type="text"
+            id="fineTitle"
+            placeholder="Example: Late Entry">
+
+        </div>
+
+        <!-- AMOUNT -->
+        <div class="input-group">
+
+            <label>Fine Amount</label>
+
+            <input
+            type="number"
+            id="fineAmount"
+            placeholder="Enter amount">
+
+        </div>
+
+        <!-- REASON -->
+        <div class="input-group">
+
+            <label>Reason</label>
+
+            <textarea
+            id="fineReason"
+            placeholder="Enter reason for fine"></textarea>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+        class="issue-btn"
+        onclick="issueFine()">
+
+            Send to Chief Warden
+
+        </button>
+
+        <!-- MESSAGE -->
+        <p id="msg"></p>
+
+    </div>
+
+</div>
+
+<script src="..\javascript\fineSystem.js"></script>
+
+</body>
+</html>

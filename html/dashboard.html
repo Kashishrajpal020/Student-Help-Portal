@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Select Role | Student Help Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/1200x/66/fb/3e/66fb3e75f4e01c6079c29e83c642d500.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    color: #64748b;
+    margin-top: 10px;
+}
+
+/* GRID */
+.roles {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARD */
+.role-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.role-card .icon {
+    font-size: 2rem;
+}
+
+/* TITLE */
+.role-card h3 {
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.role-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* HOVER EFFECT */
+.role-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* GLOW EFFECT */
+.role-card::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,0,0,0.05), transparent);
+    top: -50%;
+    left: -50%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.role-card:hover::before {
+    opacity: 1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navbar a.active {
+    font-weight: 600;
+}
+
+/* Hover underline animation */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #0f172a;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #0f172a;
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+    <h1>Student Help Portal</h1>
+</header>
+
+<nav>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="policies.html">Policies</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>How do you want to continue?</h1>
+    <p>Select your role to access the dashboard</p>
+</header>
+
+<section class="roles">
+
+<div class="role-card" onclick="location.href='login.html'">
+    <div class="icon">🎓</div>
+    <h3>Student</h3>
+    <p>Track Fines, Payments & Records</p>
+</div>
+
+<div class="role-card" onclick="location.href='wardenLogin.html'">
+    <div class="icon">🛡️</div>
+    <h3>Warden</h3>
+    <p>Manage complaints and initiate fine requests</p>
+</div>
+
+<div class="role-card" onclick="location.href='chiefWardenLogin.html'">
+    <div class="icon">⭐</div>
+    <h3>Chief Warden</h3>
+    <p>Approve fines and oversee hostel operations</p>
+</div>
+
+<div class="role-card" onclick="location.href='vpLogin.html'">
+    <div class="icon">🏛️</div>
+    <h3>Vice President</h3>
+    <p>Monitor policies and ensure transparency</p>
+</div>
+</section>
+
+<footer>
+    © 2026 Student Help Portal | Role Based Access System
+</footer>
+
+</body>
+</html>

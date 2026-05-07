@@ -1,0 +1,299 @@
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* BODY */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("https://i.pinimg.com/1200x/66/fb/3e/66fb3e75f4e01c6079c29e83c642d500.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    overflow:hidden;
+}
+
+/* FLOATING GLOW */
+.glow1,
+.glow2{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:0;
+}
+
+.glow1{
+    width:280px;
+    height:280px;
+
+    background:#d6bfa7;
+
+    top:-80px;
+    left:-80px;
+
+    opacity:0.35;
+}
+
+.glow2{
+    width:250px;
+    height:250px;
+
+    background:#b08968;
+
+    bottom:-80px;
+    right:-60px;
+
+    opacity:0.35;
+}
+
+/* LOGIN CARD */
+.login-card{
+
+    width:400px;
+    padding:42px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,0.72);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.18);
+
+    position:relative;
+    z-index:2;
+
+    animation:fadeIn 1s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* LOGO */
+.logo{
+
+    width:78px;
+    height:78px;
+
+    margin:auto;
+    margin-bottom:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,#c5cbce,#e8e7eb);
+
+    font-size:34px;
+
+    color:white;
+
+    box-shadow:
+    0 0 20px rgba(37,99,235,0.25);
+}
+
+/* HEADING */
+h1{
+    text-align:center;
+    color:#0f172a;
+
+    font-size:30px;
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+
+    color:#475569;
+
+    font-size:14px;
+
+    margin-bottom:34px;
+}
+
+/* INPUT GROUP */
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#1e293b;
+
+    font-size:14px;
+    font-weight:600;
+}
+
+/* INPUT BOX */
+.input-box{
+    position:relative;
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 16px 15px 48px;
+
+    border:none;
+    outline:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.75);
+
+    color:#0f172a;
+
+    font-size:15px;
+
+    border:1px solid rgba(148,163,184,0.25);
+
+    transition:0.3s ease;
+}
+
+.input-box input::placeholder{
+    color:#64748b;
+}
+
+.input-box input:focus{
+
+    background:white;
+
+    box-shadow:
+    0 0 0 3px rgba(59,130,246,0.20),
+    0 0 18px rgba(59,130,246,0.15);
+}
+
+/* ICONS */
+.icon{
+
+    position:absolute;
+
+    top:50%;
+    left:16px;
+
+    transform:translateY(-50%);
+
+    font-size:17px;
+
+    color:#64748b;
+}
+
+/* OPTIONS */
+.options{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:28px;
+
+    font-size:13px;
+
+    color:#334155;
+}
+
+.options a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/* BUTTON */
+.login-btn{
+
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.35s ease;
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.30);
+}
+
+/* ERROR */
+#msg{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:#e50b0b;
+
+    font-size:14px;
+}
+
+/* FOOTER */
+.footer{
+
+    text-align:center;
+
+    margin-top:28px;
+
+    color:#475569;
+
+    font-size:12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:450px){
+
+    .login-card{
+        width:90%;
+        padding:30px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+}

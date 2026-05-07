@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="..\css\login.css">
+
+</head>
+
+<body>
+
+<!-- GLOW EFFECT -->
+<div class="glow1"></div>
+<div class="glow2"></div>
+
+<!-- LOGIN CARD -->
+<div class="login-card">
+
+    <div class="logo">
+        🎓
+    </div>
+
+    <h1>Student Portal</h1>
+
+    <p class="subtitle">
+        Login to continue to your dashboard
+    </p>
+
+    <!-- USERNAME -->
+    <div class="input-group">
+
+        <label>Username</label>
+
+        <div class="input-box">
+
+            <span class="icon">👤</span>
+
+            <input 
+            type="text"
+            id="username"
+            placeholder="Enter your username">
+
+        </div>
+
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="input-group">
+
+        <label>Password</label>
+
+        <div class="input-box">
+
+            <span class="icon">🔒</span>
+
+            <input
+            type="password"
+            id="password"
+            placeholder="Enter your password">
+
+        </div>
+
+    </div>
+
+    <!-- OPTIONS -->
+    <div class="options">
+
+        <label>
+            <input type="checkbox">
+            Remember me
+        </label>
+
+        <a href="#">Forgot Password?</a>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="login-btn" onclick="login()">
+        Login
+    </button>
+
+    <!-- ERROR MESSAGE -->
+    <p id="msg"></p>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Student Management System
+    </div>
+
+</div>
+
+<script src="..\javascript\script.js"></script>
+
+</body>
+</html>

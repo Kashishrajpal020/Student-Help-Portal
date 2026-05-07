@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fine Analytics</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="..\css\fine-analytics.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR (SAME AS OTHER PAGES) -->
+<div class="sidebar">
+
+    <div>
+
+        <div class="logo">
+
+            <div style="font-size:42px;">🛡️</div>
+
+            <h1>Chief Warden</h1>
+            <p>Approval Management System</p>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="chief1.html">⏳ Pending Requests</a>
+            <a href="approved-fines.html">✅ Approved Fines</a>
+            <a href="rejected-fines.html">❌ Rejected Requests</a>
+            <a href="fine-analytics.html" class="active">📊 Fine Analytics</a>
+
+        </div>
+
+    </div>
+
+    <div class="sidebar-footer">
+        Hostel Management System
+    </div>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <h1>📊 Fine Analytics Dashboard</h1>
+
+    <div class="grid">
+
+        <div class="card total">
+            <h2 id="total">0</h2>
+            <p>Total Fines</p>
+        </div>
+
+        <div class="card pending">
+            <h2 id="pending">0</h2>
+            <p>Pending</p>
+        </div>
+
+        <div class="card approved">
+            <h2 id="approved">0</h2>
+            <p>Approved</p>
+        </div>
+
+        <div class="card rejected">
+            <h2 id="rejected">0</h2>
+            <p>Rejected</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="../javascript/fineAnalytics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* BODY (LIGHT THEME LIKE OTHER PAGES) */
+body{
+
+    display:flex;
+    min-height:100vh;
+
+    
+    background-image:url("https://i.pinimg.com/1200x/66/fb/3e/66fb3e75f4e01c6079c29e83c642d500.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ===============================
+   SIDEBAR (EXACT SAME STYLE AS OTHER PAGES)
+================================ */
+
+.sidebar{
+
+    width:270px;
+
+    background:
+    linear-gradient(180deg,#0f172a,#020617);
+
+    padding:30px 22px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.35);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo h1{
+    color:white;
+    font-size:28px;
+    margin-top:10px;
+}
+
+.logo p{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    padding:15px 18px;
+
+    border-radius:18px;
+
+    color:#e2e8f0;
+
+    background:rgba(255,255,255,0.04);
+
+    transition:0.3s ease;
+
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.nav-links a:hover{
+    transform:translateX(6px);
+    background:rgba(255,255,255,0.08);
+}
+
+.nav-links .active{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+    color:white;
+    box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+}
+
+/* FOOTER */
+.sidebar-footer{
+    color:#94a3b8;
+    text-align:center;
+    font-size:13px;
+}
+
+/* ===============================
+   MAIN AREA
+================================ */
+
+.main{
+    flex:1;
+    padding:40px;
+}
+
+/* HEADING */
+h1{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:22px;
+}
+
+/* LIGHT GLASS CARDS */
+.card{
+
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* NUMBERS */
+.card h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+/* LABEL */
+.card p{
+    color:#334155;
+    font-weight:500;
+}
+
+/* ACCENTS */
+.total{
+    border-top:4px solid #3b82f6;
+}
+
+.pending{
+    border-top:4px solid #fbbf24;
+}
+
+.approved{
+    border-top:4px solid #22c55e;
+}
+
+.rejected{
+    border-top:4px solid #ef4444;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    h1{
+        font-size:30px;
+    }
+}

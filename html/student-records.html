@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Records</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="..\css\warden.css">
+
+<link rel = "stylesheet" href="..\css\student-records.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR (same as your system) -->
+<div class="sidebar">
+
+    <div>
+
+        <div class="logo">
+            <div style="font-size:40px;">🛡️</div>
+            <h1>Warden</h1>
+            <p>Hostel Fine System</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="warden1.html">📝 Issue Fine</a>
+            <a href="pending-requests.html">⏳ Pending Requests</a>
+            <a href="approved-warden.html">✅ Approved Fines</a>
+            <a href="student-records.html" class="active">👨‍🎓 Student Records</a>
+        </div>
+
+    </div>
+
+    <div class="sidebar-footer">
+        Hostel Management System
+    </div>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <div class="topbar">
+
+        <div class="heading-box">
+            <div class="heading-badge">STUDENT PANEL</div>
+            <h2>Student Records</h2>
+            <p>All approved fines from Chief Warden are shown here</p>
+        </div>
+
+        <div class="profile">👤</div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="section-title">Approved Fines</div>
+
+        <!-- JS will fill this -->
+        <div id="recordsContainer"></div>
+
+    </div>
+
+</div>
+
+<!-- LINK TO JS FILE -->
+<script src="..\javascript\student-records.js"></script>
+
+</body>
+</html>
